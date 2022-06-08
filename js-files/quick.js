@@ -58,6 +58,8 @@ let quickSort = async (bars,l,r)=>{//async
 
 
 const startQuickSorting = async () => {//async
+    quickButton.classList.add("colorTheBottom");
+
     let bars = document.getElementsByClassName("bar");
     const sizeRadio = document.getElementsByClassName("sorting-speed")
     const disablenow = document.getElementsByClassName("sorting-disable")
@@ -74,6 +76,7 @@ const startQuickSorting = async () => {//async
     for(const i of disablenow){
         i.removeAttribute("disabled")
     }
+    quickButton.classList.remove("colorTheBottom");
     return;
 }
 const swap = async (e1,e2)=>{//async

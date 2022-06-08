@@ -1,5 +1,6 @@
 let bubbleDelay
 const startBubbleSorting = async () => {
+    bubbleButton.classList.add("colorTheBottom");
     let bars = document.getElementsByClassName("bar");
     const sizeRadio = document.getElementsByClassName("sorting-speed")
     for(const i of sizeRadio){
@@ -38,6 +39,7 @@ const startBubbleSorting = async () => {
     for(const i of disablenow){
         i.removeAttribute("disabled")
     }
+    bubbleButton.classList.remove("colorTheBottom");
 }
 let bubbleSpeedButtons = document.getElementsByClassName("sorting-speed")
 for (const i of bubbleSpeedButtons) {

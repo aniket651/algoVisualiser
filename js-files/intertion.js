@@ -1,5 +1,7 @@
 let insertionDelay
 const startIntertionSort = async()=>{
+    document.getElementById("intertionSort").classList.add("colorTheBottom");
+
     const bars = document.getElementsByClassName("bar")
     const sizeRadio = document.getElementsByClassName("sorting-speed")
     for(const i of sizeRadio){
@@ -40,6 +42,8 @@ const startIntertionSort = async()=>{
     for(const i of disablenow){
         i.removeAttribute("disabled")
     }
+    document.getElementById("intertionSort").classList.remove("colorTheBottom");
+
 }
 
 let insertionSpeedButtons = document.getElementsByClassName("sorting-speed")

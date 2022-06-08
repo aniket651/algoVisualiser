@@ -1,5 +1,6 @@
 let selectionDelay
 const startSelectionSorting = async () => {
+    trigger.classList.add("colorTheBottom");
     const sizeRadio = document.getElementsByClassName("sorting-speed")
     for (const i of sizeRadio) {
         if (i.checked) {
@@ -43,6 +44,8 @@ const startSelectionSorting = async () => {
     for(const i of disablenow){
         i.removeAttribute("disabled")
     }
+    trigger.classList.remove("colorTheBottom");
+
 }
 
 let selectionSpeedButtons = document.getElementsByClassName("sorting-speed")

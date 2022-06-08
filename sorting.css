@@ -4,7 +4,7 @@ body{
 h1{
     color: beige;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 .barArea{
@@ -16,4 +16,7 @@ h1{
     margin: 1px;
     background-color: springgreen;
     display: inline-block;
+}
+.colorTheBottom{
+    border-bottom: 5px solid rgb(255, 0, 102);
 }
