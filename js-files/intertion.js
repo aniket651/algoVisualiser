@@ -1,4 +1,4 @@
-let insertiondelay
+let insertionDelay
 const startIntertionSort = async()=>{
     const bars = document.getElementsByClassName("bar")
     const sizeRadio = document.getElementsByClassName("sorting-speed")
@@ -27,6 +27,9 @@ const startIntertionSort = async()=>{
             }
             bars[j].style.backgroundColor = "white"
             bars[j+1].style.backgroundColor = "white"
+            if(h1<=h2){
+                break;
+            }
         }
         await new Promise(resolve => setTimeout(resolve, insertionDelay));
 
