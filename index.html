@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualiser</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sorting.css">
+
+</head>
+
+<body>
+    <div>
+        <h1>Algorithm Visualiser</h1>
+    </div>
+    <div class="navbar">
+        <div class="container-fluid">
+            <div class="navpart1">
+                <button id="newArray" type="button" class="btn btn-outline-success newarr sorting-disable">new Array</button>
+                <div class="btn-group">
+                    <button class="btn btn-secondary dropdown-toggle sorting-disable" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="true"> choose size of array </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><input type="radio" class="btn-check array-size" name="btnradio" value="10" id="btnradio1"
+                                autocomplete="off" checked>
+                            <label class="btn btn-outline-primary dropdown-item" for="btnradio1">10</label>
+                        </li>
+                        <li><input type="radio" class="btn-check array-size" name="btnradio" value="20" id="btnradio2"
+                                autocomplete="off">
+                            <label class="btn btn-outline-primary dropdown-item" for="btnradio2">20</label>
+                        </li>
+                        <li> <input type="radio" class="btn-check array-size" name="btnradio" value="40" id="btnradio3"
+                                autocomplete="off">
+                            <label class="btn btn-outline-primary dropdown-item" for="btnradio3">40</label>
+                        </li>
+                        <li> <input type="radio" class="btn-check array-size" name="btnradio" value="50" id="btnradio4"
+                                autocomplete="off">
+                            <label class="btn btn-outline-primary dropdown-item" for="btnradio4">50</label>
+                        </li>
+                        <li><input type="radio" class="btn-check array-size" name="btnradio" value="75" id="btnradio5"
+                                autocomplete="off">
+                            <label class="btn btn-outline-primary dropdown-item" for="btnradio5">75</label>
+                        </li>
+                        <li> <input type="radio" class="btn-check array-size" name="btnradio" value="100" id="btnradio6"
+                                autocomplete="off">
+                            <label class="btn btn-outline-primary dropdown-item" for="btnradio6">100</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="true"> select speed level </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                        <li><input type="radio" class="btn-check sorting-speed" name="speed" value="500"
+                                id="speedradio1" autocomplete="off">
+                            <label class="btn btn-outline-primary dropdown-item" for="speedradio1">speed level-1</label>
+                        </li>
+                        <li><input type="radio" class="btn-check sorting-speed" name="speed" value="100"
+                                id="speedradio2" autocomplete="off">
+                            <label class="btn btn-outline-primary dropdown-item" for="speedradio2">speed level-2</label>
+                        </li>
+
+                        <li><input type="radio" class="btn-check sorting-speed" name="speed" value="50" id="speedradio3"
+                                autocomplete="off">
+                            <label class="btn btn-outline-primary dropdown-item" for="speedradio3">speed level-3</label>
+                        </li>
+
+                        <li><input type="radio" class="btn-check sorting-speed" name="speed" value="20" id="speedradio4"
+                                autocomplete="off" checked>
+                            <label class="btn btn-outline-primary dropdown-item" for="speedradio4">speed level-4</label>
+                        </li>
+
+                        <li><input type="radio" class="btn-check sorting-speed" name="speed" value="10" id="speedradio5"
+                                autocomplete="off">
+                            <label class="btn btn-outline-primary dropdown-item" for="speedradio5">speed level-5</label>
+                        </li>
+
+                        <li><input type="radio" class="btn-check sorting-speed" name="speed" value="5" id="speedradio6"
+                                autocomplete="off">
+                            <label class="btn btn-outline-primary dropdown-item" for="speedradio6">speed level-6</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navpart2">
+                <button id="bubbleSort" type="button" class="btn btn-outline-info bubble sort sorting-disable">Bubble Sort</button>
+                <button id="selectionSort" type="button" class="btn btn-outline-info selection sort sorting-disable">Selection
+                    Sort</button>
+                <button id="intertionSort" type="button" class="btn btn-outline-info intertion sort sorting-disable">Intertion
+                    Sort</button>
+                <button id="quickSort" type="button" class="btn btn-outline-info quick sort sorting-disable">Quick Sort</button>
+                <button id="mergeSort" type="button" class="btn btn-outline-info merge sort sorting-disable">merge Sort</button>
+            </div>
+        </div>
+    </div>
+    <div class="mainBody row">
+        <div class="leftFlaps flaps col-3">
+
+        </div>
+        <div class="barArea col-6" id="barArea">
+
+        </div>
+        <div class="rightFlaps flaps col-3">
+
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js-files/sorting.js"></script>
+    <script src="js-files/bubble.js"></script>
+    <script src="js-files/intertion.js"></script>
+    <script src="js-files/merge.js"></script>
+    <script src="js-files/quick.js"></script>
+    <script src="js-files/selection.js"></script>
+
+
+</body>
+
+</html>
