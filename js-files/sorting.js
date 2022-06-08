@@ -19,7 +19,7 @@ let hereWeGoAgain = () => {
         bar.classList.add("bar")
         let s = (arr[index] * 3).toString() + "px";
         bar.style.height = s
-        bar.style.width = ((50/n)*10).toString()+"px"
+        bar.style.width = (Math.floor((25/n)*10)).toString()+"px"
         document.getElementById("barArea").appendChild(bar);
     }
 }
