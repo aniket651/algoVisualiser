@@ -31,7 +31,7 @@ const merge = (bars,l,r)=>{
 }
 
 
-const mergeSort = (bars,l,r)=>{
+const mergeSort = async(bars,l,r)=>{
 
     if(l>r) return;
 
